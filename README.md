@@ -38,7 +38,27 @@ When you're satisfied with your script and ready to build for production, run:
 
 This command compiles the production-optimised `javascript` to `main.js`, a file compiled out of [index.js][3].
 
-When your script is ready, rename this file to your liking and start referring to your functions, objects, arrays, variables - or whatever it was you defined in your script.
+When your script is ready, you may use it in other pages by doing the usual script inclusion:
+
+```html
+<script src="/path/to/js/renamed-to-your-discretion.min.js"></script>
+<script>
+  yourAwesomeFunction({
+    so: 'much',
+    wow: 'zee'
+  });
+</script>
+```
+
+You may rename the compiled file to your liking and start referring to your functions, objects, arrays, variables - or whatever it was you defined in your script.
+
+Remember to do some sensible checks, like the vanilla js equivalent to jQeury's _"on document ready"_:
+
+```
+document.addEventListener('DOMContentLoaded', () => {
+  // document has finished loading
+}
+```
 
 ### License
 
