@@ -52,9 +52,9 @@ When your script is ready, you may use it in other pages by doing the usual scri
 
 You may rename the compiled file to your liking and start referring to your functions, objects, arrays, variables - or whatever it was you defined in your script.
 
-Remember to do some sensible checks, like the vanilla js equivalent to jQeury's _"on document ready"_:
+Remember to do some sensible checks, like the vanilla js equivalent to jQuery's _"on document ready"_:
 
-```
+```javascript
 document.addEventListener('DOMContentLoaded', () => {
   // document has finished loading
 }
