@@ -68,9 +68,27 @@ This project wouldn't be complete without proper testing frameworks, so I've inc
 
 [Jest][4] is my Unit Testing framework of choice. It's well documented and shares good practices & syntax with its most known predecessors (Mocha, Jasmine, etc). [Babel][6] was introduced as a dependency to the project because of Jest, but it was worth it since now we can use **ES6** syntax on our tests as well.
 
+Run all tests, once:
+
+    npm run test
+
+Initialise the tests in watch mode:
+
+    npm run test:watch
+
+> All tests reside beside the file they are testing, and should have the same name, suffixed with `.test.js`. See example: [sumUtil.test.js](https://github.com/dreamyguy/vanillajs-starter/blob/master/utils/).
+
 ## E2E / Integration testing
 
 [Cypress][4] is an up-and-coming modern integratonn test framework. It has an extensive and consise documentation that will get you to write complex integration tests without all the headache. A must for testing interactive behaviour and DOM manipulation.
+
+Initialise Cypress:
+
+    npm run cypress:open
+
+This will open Cypress' binary. From there one will be able to initialise the whole test suite or individual tests.
+
+> All tests reside on the folder [cypress/integration/](https://github.com/dreamyguy/vanillajs-starter/blob/master/cypress/integration/) and should be suffixed with `_spec.js`. See example: [main-heading_spec.js](https://github.com/dreamyguy/vanillajs-starter/blob/master/cypress/integration/main-heading_spec.js).
 
 ## Good to know
 
@@ -84,7 +102,7 @@ This project wouldn't be complete without proper testing frameworks, so I've inc
 
   [1]: http://sidhree.com/
   [2]: https://nodejs.org/
-  [3]: https://github.com/dreamyguy/vanillajs-starter/blob/master//src/index.js
+  [3]: https://github.com/dreamyguy/vanillajs-starter/blob/master/src/index.js
   [4]: https://jestjs.io/
   [5]: https://www.cypress.io/
   [6]: https://babeljs.io/
