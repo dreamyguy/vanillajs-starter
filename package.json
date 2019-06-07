@@ -21,13 +21,18 @@
   "copyright": "Copyright (c) Wallace Sidhrée - All rights reserved.",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
     "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch --verbose",
     "cypress:open": "cypress open"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
     "cypress": "^3.3.1",
+    "jest": "^24.8.0",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.7.0"
