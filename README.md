@@ -12,15 +12,15 @@ This project outputs production-optimised `javascript` to a folder called `dist`
 
 **You can use ES6 syntax**, do imports of local helpers, utilities, frameworks or modules introduced through `npm`. The sky is the limit, _but here you get started with the bare minimum setup._
 
-## Development
+# Development
 
-### Getting started
+## Getting started
 
 Clone this repo locally. You'll need to have [NodeJS][1] installed. Install all dependencies by running:
 
     npm i
 
-### Run it locally
+## Run it locally
 
 To start the app locally, run:
 
@@ -30,7 +30,7 @@ This command fires up the application on port `9889`, making it visible on http:
 
 Every time you make changes to [index.js][3], your page will refresh and reflect the changes.
 
-### Building for production
+## Building for production
 
 When you're satisfied with your script and ready to build for production, run:
 
@@ -60,14 +60,31 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 ```
 
+# Testing
+
+This project wouldn't be complete without proper testing frameworks, so I've included two: one for **Unit Testing** and another for **E2E (End to End) testing**.
+
+## Unit testing
+
+[Jest][4] is my Unit Testing framework of choice. It's well documented and shares good practices & syntax with its most known predecessors (Mocha, Jasmine, etc). [Babel][6] was introduced as a dependency to the project because of Jest, but it was worth it since now we can use **ES6** syntax on our tests as well.
+
+## E2E / Integration testing
+
+[Cypress][4] is an up-and-coming modern integratonn test framework. It has an extensive and consise documentation that will get you to write complex integration tests without all the headache. A must for testing interactive behaviour and DOM manipulation.
+
+## Good to know
+
 ### License
 
 [MIT](LICENSE)
 
 ### About
 
-**Vanilla JS Starter** is based on [Webpack's Getting Started Guide](https://webpack.js.org/guides/getting-started/) and put together by [Wallace Sidhrée][1]. 👨‍💻🇳🇴
+**Vanilla JS Starter** was inspired by [Webpack's Getting Started Guide](https://webpack.js.org/guides/getting-started/) and a desire to go beyond _Codepen / Codesandbox_ inherent limitations. It was put together by [Wallace Sidhrée][1]. 👨‍💻🇳🇴
 
   [1]: http://sidhree.com/
   [2]: https://nodejs.org/
   [3]: https://github.com/dreamyguy/vanillajs-starter/blob/master//src/index.js
+  [4]: https://jestjs.io/
+  [5]: https://www.cypress.io/
+  [6]: https://babeljs.io/
