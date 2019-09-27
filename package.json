@@ -1,6 +1,6 @@
 {
   "name": "vanillajs-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bare minimum sandbox to get you started with Vanilla JS prototyping in a browser environment",
   "keywords": [
     "vanilla js starter",
@@ -27,11 +27,12 @@
     "test:watch": "jest --watch --verbose",
     "cypress:open": "cypress open"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-jest": "^24.8.0",
-    "cypress": "^3.3.1",
+    "cypress": "^3.4.1",
     "jest": "^24.8.0",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.2",
